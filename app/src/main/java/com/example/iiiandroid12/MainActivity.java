@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
                     viewPager.setCurrentItem(1);
                 }else if(position == 4){
                     viewPager.setCurrentItem(3);
+                    
                 }
             }
         });
