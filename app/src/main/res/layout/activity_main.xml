@@ -17,16 +17,22 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="P1"
+            android:onClick="gotoP1"
             />
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="P2"
+            android:onClick="gotoP2"
             />
         <Button
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:text="P3"
+            android:onClick="gotoP3"
             />
         <Button
             android:layout_width="0dp"
