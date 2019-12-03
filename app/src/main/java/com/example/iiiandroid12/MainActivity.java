@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity {
         fs[0] = new P0(); fs[1] = new P1(); fs[2] = new P2();
         fs[3] = new P3(); fs[4] = new P4();
         viewPager.setAdapter(new MyPagerAdapter(getSupportFragmentManager()));
+        initActionBar();
         viewPager.setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener(){
             @Override
             public void onPageSelected(int position) {
@@ -37,14 +38,14 @@ public class MainActivity extends AppCompatActivity {
 
                 if (position == 0){
                     viewPager.setCurrentItem(1);
-                }else if(position == 4){
+                }else if(position == 4) {
                     viewPager.setCurrentItem(3);
-
+                }else{
+                    actionBar.setSelectedNavigationItem(position-1);
                 }
             }
         });
         viewPager.setCurrentItem(1);
-        initActionBar();
     }
 
     private void initActionBar(){
